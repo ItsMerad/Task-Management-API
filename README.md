@@ -1,17 +1,32 @@
-# Task Management API
+# 🚀 Task Management API
 
-Basit ve kullanışlı bir görev yönetim sistemi sunan ASP.NET Core REST API uygulaması.
+![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?style=for-the-badge&logo=dotnet)
+![C#](https://img.shields.io/badge/C%23-13.0-239120?style=for-the-badge&logo=csharp)
+![REST API](https://img.shields.io/badge/Architecture-REST-blue?style=for-the-badge)
+![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+
+Basit, hızlı ve kullanışlı bir görev yönetim sistemi sunan **ASP.NET Core REST API** uygulaması. Minimal API yaklaşımıyla geliştirilmiş olup, yüksek performanslı ve hafif bir yapıya sahiptir.
+
+
 
 ## 📋 Proje Açıklaması
 
-Bu uygulama, kullanıcıların görevler (tasks) oluşturmasına, okuyabilmesine, güncellemesine ve silebilmesine olanak tanır. Tüm veriler bellekte (in-memory) depolanır ve uygulama yeniden başlatıldığında sıfırlanır.
+Bu uygulama, kullanıcıların görevlerini (tasks) dijital bir ortamda yönetmelerini sağlar. Veriler yüksek performans için **In-Memory (ConcurrentDictionary)** üzerinde tutulmaktadır.
 
-### Özellikler
-- ✅ **CRUD Operasyonları**: Tam CRUD (Create, Read, Update, Delete) desteği
-- ✅ **RESTful API**: Standart REST mimarisi
-- ✅ **Swagger/OpenAPI**: Otomatik API dokümantasyonu
-- ✅ **Input Validasyonu**: Gerekli alanların kontrolü
-- ✅ **Hata Yönetimi**: Uygun HTTP status kodları
+### ✨ Temel Özellikler
+- ✅ **Tam CRUD Desteği**: Oluşturma, Okuma, Güncelleme ve Silme işlemleri.
+- ✅ **Swagger/OpenAPI**: Etkileşimli API dokümantasyonu ve test arayüzü.
+- ✅ **Input Validation**: Veri tutarlılığı için zorunlu alan kontrolleri.
+- ✅ **Modern C#**: Record tipleri ve Minimal API syntax kullanımı.
+- ✅ **Error Handling**: Standart HTTP durum kodları ile anlamlı hata yanıtları.
+
+---
+
+## 🏗️ Mimari ve Veri Akışı
+
+Uygulama, standart bir RESTful mimariyi takip eder:
+Kullanıcı (Client) ↔ HTTP Request ↔ TaskController (Minimal APIs) ↔ In-Memory Storage
+
 
 ## 🛠️ Gereksinimler
 
@@ -26,9 +41,6 @@ dotnet --version
 ## 🚀 Kurulum ve Çalıştırma
 
 ### 1. Projeyi Klonlayın
-```bash
-cd "/Users/mehmeterad/Desktop/GitHub/Web Based /Midterm/Task Management API"
-```
 
 ### 2. Uygulamayı Çalıştırın
 ```bash
@@ -228,7 +240,3 @@ Terminal'de `Ctrl+C` tuşlarına basın.
 ## 📧 Destek
 
 Sorularınız veya önerileriniz için lütfen iletişime geçin.
-
----
-
-**Son Güncelleme**: 16 Şubat 2026
