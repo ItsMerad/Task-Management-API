@@ -1,9 +1,5 @@
 /.DS_Store
-/Properties
-/Task_Management_API.csproj
-/Task_Management_API.http
-/Task_Management_API.sln
-/appsettings.Development.json
-/appsettings.json
 /bin
 /obj
+appsettings.Development.json
+appsettings.json
